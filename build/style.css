@@ -1,0 +1,151 @@
+@font-face {
+  font-family: Custom;
+  src: url("./assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+* {
+  font-family: Custom;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.btn_chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: black;
+  box-shadow: 0 2px 5px black;
+  cursor: pointer;
+}
+
+.btn_chat::after {
+  position: absolute;
+  content: "Have Question?";
+  width: max-content;
+  padding: 1rem;
+  left: -250%;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0 2px 2px silver;
+}
+
+.btn_primary {
+  text-decoration: none;
+  background-color: #162d4d;
+  color: white;
+  padding: 1rem 1.5rem;
+  transition: all ease 0.25s;
+}
+
+.btn_primary:hover {
+  color: white;
+  box-shadow: 0 0 5px black;
+}
+
+section {
+  position: relative;
+}
+
+.home {
+  position: relative;
+}
+
+.home .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.results {
+  background: linear-gradient(147.35deg, #82c21f -36.14%, #039274 34.99%);
+  color: white;
+}
+
+.btn-results {
+  text-decoration: none;
+  background-color: #162d4d;
+  color: white;
+  padding: 1rem 1.75rem;
+}
+
+.btn-results:hover {
+  color: white;
+}
+
+.custom_input {
+  border: none;
+  outline: none;
+  background-color: #c4c4c4;
+  padding: 1rem 1.5rem;
+}
+
+footer {
+  background-color: #162d4d;
+}
+
+.footer_links {
+  text-decoration: none;
+  color: white;
+  max-width: fit-content;
+}
+
+.footer_links:hover {
+  color: black;
+}
+
+.footer_icons > div > img {
+  cursor: pointer;
+  transition: all ease 0.25s;
+}
+
+.footer_icons > div > img:hover {
+  transform: scale(1.1);
+}
+
+.footer_input {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.footer_input > input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+}
+
+.footer_input > button {
+  background-color: white;
+  color: #162d4d;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  padding: 0 10px;
+}
