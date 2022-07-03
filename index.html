@@ -10,6 +10,12 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Advance Aesthetics</title>
     <script src="./script.js"></script>
@@ -20,8 +26,90 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <!-- Small Header -->
+    <nav class="d-block d-lg-none navbar bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="offcanvasNavbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="offcanvasNavbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Small Header -->
+
     <!-- Header -->
-    <header>
+    <header class="d-none d-lg-block">
+      <!-- Big -->
       <nav class="d-flex align-items-center justify-content-between">
         <img src="./assets/logo.png" alt="logo" />
         <div class="menu">
@@ -212,125 +300,110 @@
     <!-- Header -->
 
     <!-- Chat Button -->
-    <div class="btn_chat">
+    <div class="btn_chat" id="btn_chat">
       <img src="./assets/icon_chat.png" alt="Chat" />
     </div>
     <!-- Chat Button -->
 
-    <!-- <section class="home vh-100">
-      <div class="content d-flex flex-column align-items-center justify-content-center">
-       <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6 p-5">
-            <h1><strong>A Solution for all your modern beauty expectations</strong></h1>
-            <p class="mt-2">Our expert team of cosmetologist and trichologists is dedicated yo give you top-class consultation and treatment</p>
-            <br>
-            <a href="#" class="btn_primary">Get Started</a>
-          </div>
-        </div>
-       </div>
+    <section class="home position-relative">
+      <!-- Big Image -->
+      <div class="d-none d-lg-block w-75 vh-100">
+        <img
+          src="./assets/asset_home.png"
+          alt="Adv"
+          class="w-100 h-100"
+          style="object-fit: cover"
+        />
+      </div>
+      <!-- Big Image -->
+
+      <!-- Medieum Image -->
+
+      <div class="d-none d-md-block d-lg-none w-100 vh-100">
+        <img
+          src="./assets/asset_home_medium.png"
+          alt="Adv"
+          class="w-100 h-100"
+          style="object-fit: cover"
+        />
       </div>
 
-      <div id="carouselExampleSlidesOnly" class="h-100 carousel slide d-none d-lg-block" data-bs-ride="carousel">
-        <div class="carousel-inner h-100">
-          <div class="carousel-item active h-100">
-            <img class="d-block w-100 h-100" src="./assets/asset_home.png" alt="" style="object-fit: cover"/>
-          </div>
-          <div class="carousel-item h-100">
-            <img class="d-block w-100 h-100" src="./assets/asset_home.png" alt="" style="object-fit: cover"/>
-          </div>
-          <div class="carousel-item h-100">
-            <img class="d-block w-100 h-100" src="./assets/asset_home.png" alt="" style="object-fit: cover"/>
-          </div>
-        </div>
+      <!-- Medieum Image -->
+
+      <!-- Small Image -->
+
+      <div class="d-md-none w-100 vh-100">
+        <img
+          src="./assets/asset_home_small.png"
+          alt="Adv"
+          class="w-100 h-100"
+          style="object-fit: cover"
+        />
+      </div>
+      <!-- Small Image -->
+
+      <div class="d-none d-lg-block home_con home_content_con_lg"></div>
+      <div
+        class="d-none d-md-block d-lg-none home_con home_content_con_md"
+      ></div>
+      <div class="d-md-none home_con home_content_con_sm"></div>
+
+      <div class="d-none d-lg-flex home_content_lg">
+        <h1 style="font-size: 80px">
+          <strong>
+            Goodbye <br />
+            to Acne & <br />
+            Discomfort
+          </strong>
+        </h1>
+        <br />
+        <p>
+          Bid goodbye to acne, scars and discomfort and get clean & clear skin.
+        </p>
+        <br />
+        <a href="#" class="btn_primary mt-5">Get Started</a>
+        <br />
       </div>
 
-      <div id="carouselExampleSlidesOnly" class="h-100 carousel slide d-lg-none" data-bs-ride="carousel">
-        <div class="carousel-inner h-100">
-          <div class="carousel-item active h-100">
-            <img class="d-block w-100 h-100" src="./assets/asset_home_mini.png" alt="" style="object-fit: cover;object-position: right;"/>
-          </div>
-          <div class="carousel-item h-100">
-            <img class="d-block w-100 h-100" src="./assets/asset_home_mini.png" alt="" style="object-fit: cover;object-position: right;"/>
-          </div>
-          <div class="carousel-item h-100">
-            <img class="d-block w-100 h-100" src="./assets/asset_home_mini.png" alt="" style="object-fit: cover;object-position: right;"/>
-          </div>
-        </div>
+      <div class="d-none d-md-block d-lg-none home_content_md">
+        <h1 style="font-size: 60px">
+          <strong>
+            Goodbye <br />
+            to Acne & <br />
+            Discomfort
+          </strong>
+        </h1>
+        <br />
+        <p>
+          Bid goodbye to acne, scars and discomfort and get clean & clear skin.
+        </p>
+        <br />
+        <a href="#" class="btn_primary mt-5">Get Started</a>
+        <br />
       </div>
-    </section> -->
 
-    <section class="home vh-100">
-      <div class="container-fluid p-0 h-100">
-        <div class="row g-0 h-100">
-          <div class="col-7 h-100">
-            <div
-              id="carouselExampleSlidesOnly"
-              class="carousel slide w-100 h-100"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner w-100 h-100">
-                <div class="carousel-item active w-100 h-100">
-                  <img
-                    src="./assets/asset_home.png"
-                    alt="Adv"
-                    class="w-100 h-100"
-                    style="object-fit: cover; object-position: top"
-                  />
-                </div>
-                <div class="carousel-item w-100 h-100">
-                  <img
-                    src="./assets/asset_home.png"
-                    alt="Adv"
-                    class="w-100 h-100"
-                    style="object-fit: cover; object-position: top"
-                  />
-                </div>
-                <div class="carousel-item w-100 h-100">
-                  <img
-                    src="./assets/asset_home.png"
-                    alt="Adv"
-                    class="w-100 h-100"
-                    style="object-fit: cover; object-position: top"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="home_content_con"></div>
-            <div
-              class="home_content d-flex flex-column align-items-start justify-content-center"
-            >
-              <a
-                href="#"
-                class="btn_media"
-                style="position: absolute; top: 10%"
-              >
-                <img src="./assets/icon_play.png" alt="Play" />
-              </a>
-              <h1 style="font-size: 60px">
-                <strong>
-                  Goodbye <br />
-                  to Acne & <br />
-                  Discomfort
-                </strong>
-              </h1>
-              <p>
-                Bid goodbye to acne, scars and discomfort and get clean & clear
-                skin.
-              </p>
-              <a href="#" class="btn_primary mt-5">Get Started</a>
-            </div>
-          </div>
-        </div>
+      <div class="d-md-none home_content_sm">
+        <h1 style="font-size: 40px">
+          <strong>
+            Goodbye <br />
+            to Acne & <br />
+            Discomfort
+          </strong>
+        </h1>
+        <br />
+        <p>
+          Bid goodbye to acne, scars and discomfort and get clean & clear skin.
+        </p>
+        <br />
+        <a href="#" class="btn_primary mt-5">Get Started</a>
+        <br />
       </div>
     </section>
 
     <section class="services" style="background-color: #162d4d; color: white">
-      <div class="container py-5">
+      <div class="container p-5">
         <div class="row">
-          <div class="col-12 col-lg d-flex flex-column">
+          <div class="col-12 col-xl d-flex flex-column">
             <h6 style="color: orange; text-transform: uppercase">
               Our services
             </h6>
@@ -339,13 +412,13 @@
               acne & weight loss.
             </h1>
           </div>
-          <div class="col-12 col-lg d-flex flex-column">
+          <div class="col-12 col-xl d-flex flex-column">
             <p>
               Advance aesthetics is an established brand which caters with all
               skin related problems and deals with-
             </p>
             <div class="mt-2 row gy-5">
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-md-6 col-lg-6">
                 <img src="./assets/asset_service_one.png" alt="Hair" />
                 <h4 class="mt-2">Hair Treatments</h4>
                 <p class="mt-2">
@@ -353,7 +426,7 @@
                   Advance aesthetics here to save the day!
                 </p>
               </div>
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-md-6 col-lg-6">
                 <img src="./assets/asset_service_two.png" alt="" />
                 <h4 class="mt-2">Skin Treatments</h4>
                 <p class="mt-2">
@@ -361,7 +434,7 @@
                   our best skin treatments for skin, acne and pigmentation.
                 </p>
               </div>
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-md-6 col-lg-6">
                 <img src="./assets/asset_service_three.png" alt="" />
                 <h4 class="mt-2">Laser Treatments</h4>
                 <p class="mt-2">
@@ -369,7 +442,7 @@
                   here and line two will be here.
                 </p>
               </div>
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-md-6 col-lg-6">
                 <img src="./assets/asset_service_four.png" alt="" />
                 <h4 class="mt-2">Slimming Treatments</h4>
                 <p class="mt-2">
@@ -397,7 +470,7 @@
               </div>
             </div>
           </div> -->
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <img
               src="./assets/asset_result.jpg"
               alt="Results"
@@ -406,7 +479,7 @@
             />
           </div>
           <div
-            class="col-6 p-5 d-flex flex-column align-items-start justify-content-center"
+            class="col-12 col-md-6 p-5 d-flex flex-column align-items-start justify-content-center"
           >
             <p>RESULTS</p>
             <h1 class="mt-2">
@@ -422,18 +495,18 @@
     </section>
 
     <section class="capabilities">
-      <div class="container py-5">
+      <div class="container mt-5">
         <div class="row g-0">
-          <div class="col-8">
+          <div class="col-12 col-lg-8">
             <h6 style="color: orange">Capabilities</h6>
             <h1 class="mt-2" style="font-size: xx-large; color: #162d4d">
               <strong
-                >We offer services that will <br />
+                >We offer services that will <br class="d-none d-md-block" />
                 help you achieve your goals.</strong
               >
             </h1>
           </div>
-          <div class="col p-5 ps-0">
+          <div class="col-12 col-lg p-2 p-md-5 ps-0">
             <p>
               Our treatments are clinically proven to be the finest and safest.
               We strive to change and normalise today’s modernbeauty scenarioand
@@ -444,23 +517,25 @@
       </div>
       <div class="container-fluid p-0">
         <div class="row g-0">
-          <div class="col-7">
+          <div class="col-12 col-lg-6 col-xl-7">
             <img
               src="./assets/asset_cap_thumbnail.png"
               alt="Capabilities"
               class="w-100"
             />
           </div>
-          <div class="col ps-5 d-flex align-items-start justify-content-start">
+          <div
+            class="d-none d-lg-block col ps-5 d-flex align-items-start justify-content-start"
+          >
             <img src="./assets/asset_cap.png" alt="Capabilities" />
           </div>
         </div>
       </div>
-      <div class="container mt-5">
+      <div class="container-fluid container-lg mt-5">
         <div class="row">
-          <div class="col-7">
-            <div class="row">
-              <div class="col">
+          <div class="col-12 col-md-6 col-lg-7">
+            <div class="row gy-5">
+              <div class="col-12 col-lg-6 px-5 p-lg-2">
                 <h1>
                   <img src="./assets/icon_dialer.png" alt="Dialer" /> 236+
                 </h1>
@@ -471,7 +546,7 @@
                   them make a considerable change in their lifestyle.
                 </p>
               </div>
-              <div class="col">
+              <div class="col-12 col-lg-6 px-5 p-lg-2">
                 <h1>
                   <img src="./assets/icon_dialer.png" alt="Dialer" /> 9346+
                 </h1>
@@ -483,17 +558,29 @@
                   results.
                 </p>
               </div>
+              <div class="col px-5 d-lg-none">
+                <a href="#" class="btn_primary">Book an oppointment</a>
+              </div>
             </div>
           </div>
-          <div class="col d-flex align-items-center justify-content-center">
+          <div
+            class="col d-none d-lg-flex align-items-center justify-content-center"
+          >
             <a href="#" class="btn_primary">Book an oppointment</a>
           </div>
+          <div class="d-lg-none col-12 col-md-6 mt-5 mt-md-0">
+            <img
+              src="./assets/asset_cap.png"
+              alt="Capabilities"
+              class="w-100"
+            />
+          </div>
         </div>
-        <div class="row mt-5 g-5">
-          <div class="col">
+        <div class="row mt-5">
+          <div class="col-12 col-md-6">
             <h1>
               <strong
-                >Trending services of the <br />
+                >Trending services of the <br class="d-none d-lg-block" />
                 month.</strong
               >
             </h1>
@@ -506,20 +593,26 @@
             </p>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col">
+        <div class="row mt-2 mt-m-5">
+          <div class="col-4">
             <img
               src="./assets/asset_hair_transplant.png"
               alt="Hair Transplant"
+              class="w-100"
             />
           </div>
-          <div class="col">
-            <img src="./assets/asset_laser_hair.png" alt="Laser" />
+          <div class="col-4">
+            <img
+              src="./assets/asset_laser_hair.png"
+              alt="Laser"
+              class="w-100"
+            />
           </div>
-          <div class="col">
+          <div class="col-4">
             <img
               src="./assets/asset_skin_rejuvenation.png"
               alt="Sking Rejuvenation"
+              class="w-100"
             />
           </div>
         </div>
@@ -616,10 +709,463 @@
       </div>
     </section> -->
 
+    <section class="theme_video my-5">
+      <video poster="./assets/video_thumbnail.png" class="w-100 h-100"></video>
+    </section>
+
+    <section class="testimonials my-5">
+      <div class="container-fluid container-lg">
+        <h4 style="color: tomato">TESTIMONIALS</h4>
+        <h1>Verified Google Reviews</h1>
+
+        <!-- Big -->
+        <div class="swiper swiperReviewBig d-none d-md-block my-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small -->
+
+        <div class="swiper swiperReviewSmall d-md-none my-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #ff7a00">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img
+                        src="./assets/asset_review_avatar.png"
+                        alt="Avatar"
+                        style="border-radius: 50%"
+                      />
+                      <h6 class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining
+                        armour for me and it helped me fix all my hairfall
+                        problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Big
+
+        var swiper = new Swiper(".swiperReviewBig", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+        // Small
+
+        var swiper = new Swiper(".swiperReviewSmall", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    </section>
+
     <section class="info container-fluid p-0 mt-5">
-      <div class="row w-100">
+      <div class="row w-100 g-0">
         <div class="col-12 col-lg-6 order-3 order-lg-0 p-0">
-          <!-- <div style="overflow:hidden;width: 100%; height: 500px;"><div id="display-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="codefor-googlemap" href="https://www.embed-map.com" id="grab-mapdata">https://www.embed-map.com</a><style>#display-googlemap img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div> -->
+          <div style="overflow: hidden; width: 100%; height: 500px">
+            <div
+              id="display-googlemap"
+              style="height: 100%; width: 100%; max-width: 100%"
+            >
+              <iframe
+                style="height: 100%; width: 100%; border: 0"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              ></iframe>
+            </div>
+            <a
+              class="codefor-googlemap"
+              href="https://www.embed-map.com"
+              id="grab-mapdata"
+              >https://www.embed-map.com</a
+            ><style>
+              #display-googlemap img {
+                max-width: none !important;
+                background: none !important;
+                font-size: inherit;
+                font-weight: inherit;
+              }
+            </style>
+          </div>
         </div>
         <div class="col-12 col-lg-3 p-5">
           <img src="./assets/icon_phone.svg" alt="phone" />
@@ -652,15 +1198,17 @@
           <div
             class="col-12 col-lg d-flex align-items-center justify-content-center"
           >
-            <h4 style="font-size: xx-large">
-              We are here to create a world where every investment in modern
-              beauty is <strong>Worth It</strong>.
+            <h4 style="font-size: 2.75rem; font-weight: 900; color: #162d4d">
+              Hurry Up! And Get Hair Transplant Consultation By Experienced
+              team.
             </h4>
           </div>
           <div
             class="col d-block d-lg-flex align-items-center justify-content-center"
           >
-            <a href="#" class="btn_primary">Book an oppointment</a>
+            <a href="javascript:showDialog()" class="btn_primary"
+              >Book an oppointment</a
+            >
           </div>
         </div>
       </div>

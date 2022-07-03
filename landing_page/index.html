@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+    <title>Advance Aesthetics</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-5">
+            <h5
+              class="modal-title text-center"
+              id="staticBackdropLabel"
+              style="color: tomato"
+            >
+              Calculate Your Cost And Grafts.
+            </h5>
+            <form onsubmit="event.preventDefault(); sendMail(false)">
+              <div class="form_input_con">
+                <img src="./assets/icon_account.webp " alt="Name" />
+                <input
+                  type="text"
+                  placeholder="Name"
+                  required
+                  id="nameInputDialog"
+                />
+              </div>
+              <div class="form_input_con">
+                <img src="./assets/icon_mail.webp" alt="Mail" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required
+                  id="emailInputDialog"
+                />
+              </div>
+              <div class="form_input_con">
+                <img src="./assets/icon_call.webp" alt="Phone" />
+                <input
+                  type="number"
+                  placeholder="Phone"
+                  required
+                  id="phoneInputDialog"
+                />
+              </div>
+              <div class="form_input_con">
+                <img src="./assets/icon_location.webp " alt="Location" />
+                <input
+                  type="text"
+                  placeholder="Location"
+                  required
+                  id="locationInputDialog"
+                />
+              </div>
+          </div>
+          <div class="modal-footer justify-content-center p-3">
+            <input
+              type="submit"
+              class="btn_primary"
+              id="dialog_form_btn"
+              value="Book an oppointment"
+            />
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <header>
+      <div
+        class="container d-flex align-items-center justify-content-between p-5 py-lg-4 "
+      >
+        <img src="./assets/footer_logo.png" alt="logo" />
+        <a href="#" class="btn_header">Call Now</a>
+      </div>
+    </header>
+
+    <section class="home" style="position: relative;">
+      <div class="container p-5 p-md-5">
+        <div class="row">
+          <div class="col">
+            <h1 class="home_title text-center">BEST HAIR TRANSPLANT IN PUNE</h1>
+
+          </div>
+        </div>
+        <!-- <div class="row g-0">
+          <div class="col">
+            <h1 class="home_title">BEST HAIR TRANSPLANT IN PUNE</h1>
+            <p class="mt-3">
+              <strong>
+                Book Your Hair Consultation With <br />
+                The Best Hair Transplant Clinic In Pune.
+              </strong>
+            </p>
+            <br />
+            <br />
+            <a href="#" class="btn_secondary">Call Now</a>
+          </div>
+          <div class="col p-5 d-flex align-items-center justify-content-center">
+            <div class="home_form p-5">
+              <h4 style="color: tomato">Calculate Your Cost And Grafts.</h4>
+              <form onsubmit="event.preventDefault(); sendMail(true)">
+                <div class="form_input_con">
+                  <img src="./assets/icon_account.webp " alt="Name" />
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    required
+                    id="nameInput"
+                  />
+                </div>
+                <div class="form_input_con">
+                  <img src="./assets/icon_mail.webp" alt="Mail" />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                    id="emailInput"
+                  />
+                </div>
+                <div class="form_input_con">
+                  <img src="./assets/icon_call.webp" alt="Phone" />
+                  <input
+                    type="number"
+                    placeholder="Phone"
+                    required
+                    id="phoneInput"
+                  />
+                </div>
+                <div class="form_input_con">
+                  <img src="./assets/icon_location.webp " alt="Location" />
+                  <input
+                    type="text"
+                    placeholder="Location"
+                    required
+                    id="locationInput"
+                  />
+                </div>
+                <br />
+                <br />
+                <input
+                  type="submit"
+                  class="btn_primary"
+                  id="home_form_btn"
+                  value="Book an oppointment"
+                />
+              </form>
+            </div>
+          </div>
+        </div> -->
+        
+      </div>
+
+      <div id="carouselHomeBig" class="carousel slide d-none d-md-block" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselHomeBig" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselHomeBig" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselHomeBig" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/asset_home.jpeg" class="d-block w-100" alt="Home Asset" style="max-height: 600px; object-fit: cover;"/>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/asset_home.jpeg" class="d-block w-100" alt="Home Asset" style="max-height: 600px; object-fit: cover;"/>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/asset_home.jpeg" class="d-block w-100" alt="Home Asset" style="max-height: 600px; object-fit: cover;"/>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomeBig" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHomeBig" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+       <!-- Small  -->
+      <div id="carouselHomeSmall" class="carousel slide d-md-none" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselHomeSmall" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselHomeSmall" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselHomeSmall" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/asset_homeSmall.jpeg" class="d-block w-100" alt="Home Asset" style=" object-fit: cover;"/>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/asset_homeSmall.jpeg" class="d-block w-100" alt="Home Asset" style=" object-fit: cover;"/>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/asset_homeSmall.jpeg" class="d-block w-100" alt="Home Asset" style=" object-fit: cover;"/>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHomeSmall" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHomeSmall" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div style="position: absolute; bottom: 12%; width: 100%;" class="text-center">
+        <a href="javascript:showDialog()" class="btn_primary" >Book an oppointment</a>
+
+
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-md-12 col-lg-7 p-5"
+            style="
+              background: linear-gradient(120deg, #82c21f, #039274);
+              color: white;
+            "
+          >
+            <h6 style="color: white">ABOUT</h6>
+            <h1 class="mt-2">
+              <strong
+                >We provide promising results in treating problems like
+                hairloss, acne & weight loss.</strong
+              >
+            </h1>
+            <div class="row">
+              <div class="col-12 col-md">
+                <h1 class="mt-5">
+                  <img src="./assets/icon_dialer.png" alt="Dialer" />
+                  236+
+                </h1>
+                <p><strong>Happy clients</strong></p>
+                <p class="mt-5">
+                  We have successfully put up a smile on 236+ clients and helped
+                  them make a considerable change in their lifestyle.
+                </p>
+              </div>
+              <div class="col-12 col-md ">
+                <h1 class="mt-5">
+                  <img src="./assets/icon_dialer.png" alt="Dialer" />
+                  9346+
+                </h1>
+                <p><strong>Working hours were spent</strong></p>
+                <p class="mt-5">
+                  We have invested a sum of 9346+ hours for the betterment of
+                  our clients and have delivered guaranteed and satisfactory
+                  results.
+                </p>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col">
+                <a href="javascript:showDialog()" class="btn_secondary">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-5 p-0">
+            <img
+              src="./assets/asset_home.jpeg"
+              alt="About"
+              class="w-100 h-100"
+              style="object-fit: cover;"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="treatments">
+      <div class="container-fluid p-5">
+        <h1 class="text-center py-5">
+          <strong>Treatments</strong>
+        </h1>
+
+        <div class="row gy-5">
+          <div class="col-12 col-md-6 col-xl">
+            <div class="card w-100 h-100">
+              <img
+                src="./assets/Hair.webp"
+                alt="Hair Transplant"
+                class="w-100"
+              />
+              <div class="card-body">
+                <h4>Title</h4>
+                <p class="card-text">
+                  Effective and permanent solution for baldness; by far
+                  transplantation is the most effective and successful solution
+                  to the baldness and hair loss.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl">
+            <div class="card w-100 h-100">
+              <img src="./assets/FUE.webp" alt="" class="w-100" />
+              <div class="card-body">
+                <h4>Title</h4>
+                <p class="card-text">
+                  FUE Hair Transplant procedure involves removal of individual
+                  follicles containing 1-4 hair or more which is usually carried
+                  out under local anesthesia.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl">
+            <div class="card w-100 h-100">
+              <img src="./assets/Beard.webp" alt="" class="w-100" />
+              <div class="card-body">
+                <h4>Title</h4>
+                <p class="card-text">
+                  Enhance Your Personality With Beard Hair Transplant At
+                  Reasonable Cost With No Complications. You Can Trim Or Shave
+                  Accordingly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl">
+            <div class="card w-100 h-100">
+              <img src="./assets/Treatment11.webp" alt="" class="w-100" />
+
+              <div class="card-body">
+                <h4>Title</h4>
+                <p class="card-text">
+                  Body to Head or scalp transplant is a procedure done when the
+                  availability of donor area is less in case of extreme grade of
+                  baldness.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="container p-2 p-md-5">
+        <h1 class="text-center p-4" style="color: white">
+          <strong>Best Hair Transplant Offers</strong>
+        </h1>
+        <div class="row  g-0">
+          <div class="col-12 col-lg p-3 ">
+            <h4 style="color: tomato">Offer Title Offer Title</h4>
+            <ul class="offer_list">
+              <li>Demo Text Demo Text</li>
+              <li>Demo Text Demo Text</li>
+              <li>Demo Text Demo Text</li>
+              <li>Demo Text Demo Text</li>
+              <li>Demo Text Demo Text</li>
+            </ul>
+            <br />
+            <br />
+            <a href="javascript:showDialog()" class="btn_secondary">Book an oppointment</a>
+            <br>
+            <br>
+          </div>
+          <div class="col-12 col-lg p-3">
+            <img
+              src="./assets/asset_home.jpeg"
+              alt="Offer"
+              class="w-100 "
+              style="object-fit: cover"
+            />
+          </div>
+        </div>
+        <div class="row mt-5 g-0">
+          <div class="col-12 col-lg p-3 order-1 order-lg-0">
+            <img
+              src="./assets/asset_home.jpeg"
+              alt="Offer"
+              class="w-100 "
+              style="object-fit: cover"
+            />
+          </div>
+          <div class="col-12 col-lg p-3">
+            <h4 style="color: tomato">Offer Title Offer Title</h4>
+            <ul class="offer_list">
+              <li>Demo Text Demo Text</li>
+              <li>Demo Text Demo Text</li>
+              <li>Demo Text Demo Text</li>
+              <li>Demo Text Demo Text</li>
+              <li>Demo Text Demo Text</li>
+            </ul>
+            <br />
+            <br />
+            <a href="javascript:showDialog()" class="btn_secondary">Book an oppointment</a>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="container-fluid py-5">
+        <h1 class="text-center">
+          <strong>Results</strong>
+        </h1>
+        <div class="swiper swiperBig d-none d-md-block mt-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_one.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_two.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_three.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_four.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_five.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_six.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+
+        <div class="swiper swiperSmall d-md-none mt-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_one.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_two.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_three.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_four.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_five.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <img
+                src="./assets/asset_result_six.webp"
+                alt="Result"
+                class="w-100"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+
+          // Big
+          
+          var swiper = new Swiper(".swiperBig", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+
+          // Small
+
+          var swiper = new Swiper(".swiperSmall", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+      </div>
+    </section>
+
+
+    <section class="testimonials">
+      <div class="container ps-5">
+        <h4 style="color: tomato">TESTIMONIALS</h4>
+        <h1>Verified Google Reviews</h1>
+
+        <!-- Big -->
+        <div class="swiper swiperReviewBig d-none d-md-block my-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small -->
+
+        <div class="swiper swiperReviewSmall  d-md-none my-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide d-flex align-items-center">
+              <div class="card w-100 h-100" style="border: 1px solid #FF7A00;">
+                <div class="container">
+                  <div class="row ps-3 py-2">
+                    <div class="col d-flex align-items-center p-2">
+                      <img src="./assets/asset_review_avatar.png" alt="Avatar" style="border-radius: 50%;"/>
+                      <h6  class="ms-2">Amit Mishra</h6>
+                    </div>
+                  </div>
+                  <div class="row ps-3 py-2">
+                    <div class="col">
+                      <p>
+                        “Advance aesthetics has been like a knight in shining armour for me and it helped me fix all my hairfall problems. I am really thankful to the entire team.”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row mt-5 ps-3 pb-3">
+                    <div class="col">
+                      <img src="./assets/asset_rating.svg" alt="Rating"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <script>
+
+        // Big
+        
+        var swiper = new Swiper(".swiperReviewBig", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+
+        // Small
+
+        var swiper = new Swiper(".swiperReviewSmall", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+          loop: true,
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+        </script>
+    </section>
+
+    <section class="services" style="background-color: #162d4d; color: white">
+      <div class="container p-5">
+        <div class="row">
+          <div class="col-12 col-lg d-flex flex-column">
+            <h6 style="color: orange; text-transform: uppercase">
+              Our services
+            </h6>
+            <h1 class="mt-2" style="font-size: xx-large">
+              We provide promising results in treating problems like hairloss,
+              acne & weight loss.
+            </h1>
+          </div>
+          <div class="col-12 col-lg d-flex flex-column">
+            <p>
+              Advance aesthetics is an established brand which caters with all
+              skin related problems and deals with-
+            </p>
+            <div class="mt-2 row gy-5">
+              <div class="col-12 col-lg-6">
+                <img src="./assets/asset_service_one.png" alt="Hair" />
+                <h4 class="mt-2">Hair Treatments</h4>
+                <p class="mt-2">
+                  Suffering with hairfall problem? Tired of damaged hair?
+                  Advance aesthetics here to save the day!
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <img src="./assets/asset_service_two.png" alt="" />
+                <h4 class="mt-2">Skin Treatments</h4>
+                <p class="mt-2">
+                  Boost up your confidence to a whole new level by trying out
+                  our best skin treatments for skin, acne and pigmentation.
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <img src="./assets/asset_service_three.png" alt="" />
+                <h4 class="mt-2">Laser Treatments</h4>
+                <p class="mt-2">
+                  Our clients describe us as a sample text for content, Line one
+                  here and line two will be here.
+                </p>
+              </div>
+              <div class="col-12 col-lg-6">
+                <img src="./assets/asset_service_four.png" alt="" />
+                <h4 class="mt-2">Slimming Treatments</h4>
+                <p class="mt-2">
+                  In today’s world where body shaming has becomesuch a major
+                  issue and being comfortable with your own body is essential
+                  advance aesthetics helps you look the way you want.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book" style="background-color: #82c21f">
+      <div class="container py-5">
+        <div class="row gy-5">
+          <div
+            class="col-12 col-lg d-flex align-items-center justify-content-center"
+          >
+            <h4 style="font-size: 2.75rem;font-weight: 900;color: #162d4d;">
+              Hurry Up! And Get Hair Transplant Consultation By Experienced team.
+            </h4>
+          </div>
+          <div
+            class="col d-block d-lg-flex align-items-center justify-content-center"
+          >
+            <a href="javascript:showDialog()" class="btn_primary">Book an oppointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container p-5">
+        <div class="row g-5">
+          <div class="col-12 col-md-5">
+            <img src="./assets/logo.png" alt="logo" />
+            <p class="mt-3">
+              Solace is best clinic in pune for hair transplant surgery and is
+              most advance in it's technique and provide best possible result to
+              each and every patients. Our main aim is to satisfy each and every
+              patient.
+            </p>
+            <div class="row mt-5">
+              <div class="col text-center text-md-start">
+                <img
+                  src="./assets/icon_facebook.png"
+                  alt="Facebook"
+                  style="background-color: #162d4d; border-radius: 50%"
+                />
+              </div>
+              <div class="col text-center text-md-start">
+                <img
+                  src="./assets/icon_instagram.png"
+                  alt="Instagram"
+                  style="background-color: #162d4d; border-radius: 50%"
+                />
+              </div>
+              <div class="col text-center text-md-start">
+                <img
+                  src="./assets/icon_linkedin.png"
+                  alt="LinkedIn"
+                  style="background-color: #162d4d; border-radius: 50%"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md">
+            <h4 class="footer_title">Links</h4>
+            <ul style="padding-left: 1rem">
+              <li>Home</li>
+              <li>Results</li>
+              <li>Offer</li>
+              <li>About Us</li>
+              <li>Treatment</li>
+              <li>Reviews</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md">
+            <h4 class="footer_title">Get In Touch</h4>
+            <p>
+              <strong>Address : </strong>
+              Bhoomi Allium, Shop No. 1001, First Floor, Next to ranka
+              jewellers, Kokane chowk, Pimple saudagar, Pune - 411027
+            </p>
+            <p>
+              <strong>Phone : </strong>
+              +91 7066511155
+            </p>
+            <p>
+              <strong>Email :</strong>
+              demo@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="color: white; background-color: #162d4d">
+        <div
+          class="container d-none d-lg-flex align-items-center justify-content-between mt-5 py-2"
+        >
+          <span> © 2022, Advanced Aesthetics </span>
+          <span> Privacy & Cookie Policy | Terms of Service </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

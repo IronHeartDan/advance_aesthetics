@@ -1,3 +1,14 @@
+window.onload = () => {
+  var btn_chat = document.getElementById("btn_chat");
+  window.onscroll = (e) => {
+    if (document.body.scrollHeight === window.scrollY + window.innerHeight) {
+      btn_chat.style.transform = "scale(0)";
+    } else {
+      btn_chat.style.transform = "scale(1)";
+    }
+  };
+};
+
 function showMegaMenu(type) {
   var megaMenuCon = document.getElementById("mega_menu_con");
   megaMenuCon.style.transform = "translateY(0%)";

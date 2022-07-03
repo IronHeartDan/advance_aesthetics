@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "advance-aesthetics-home",
     "public": "build",
     "ignore": [
       "firebase.json",

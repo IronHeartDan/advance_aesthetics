@@ -5,9 +5,6 @@
 
 * {
   font-family: Custom;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -22,14 +19,15 @@ html {
   bottom: 0;
   right: 0;
   z-index: 1000;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   padding: 2rem;
   margin: 1rem;
   background-color: black;
   box-shadow: 0 2px 5px black;
   cursor: pointer;
+  transition: all ease 0.25s;
 }
 
 .btn_chat::after {
@@ -41,6 +39,12 @@ html {
   border-radius: 50px;
   background-color: white;
   box-shadow: 0 2px 2px silver;
+}
+
+@media screen and (max-width: 400px) {
+  .btn_chat::after {
+    display: none;
+  }
 }
 
 .btn_primary {
@@ -136,23 +140,77 @@ section {
   z-index: 999;
 } */
 
-.home .home_content_con {
-  position: relative;
+/* .home .home_content_con {
   height: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
   transform: translateX(-40%);
   background: linear-gradient(0deg, #82c21f, #039274);
   mix-blend-mode: multiply;
+} */
+
+.home .home_con {
+  position: absolute;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #82c21f, #039274);
+  mix-blend-mode: multiply;
 }
 
-.home_content {
+.home .home_content_con_lg {
+  bottom: 0%;
+  right: 0%;
+}
+
+.home .home_content_con_md {
+  height: 90%;
+  bottom: 0;
+  left: -30%;
+}
+
+.home .home_content_con_sm {
+  bottom: -40%;
+  right: 0%;
+}
+
+.home_content_lg {
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  /* background-color: black; */
+  height: 60%;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 15%;
+  top: 15%;
+  padding: 40px 20px;
+  color: white;
+}
+
+.home_content_md {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  padding: 40px 20px;
+  color: white;
+}
+
+.home_content_sm {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 40px 20px;
+  color: white;
+}
+
+/* .home_content {
   position: absolute;
   top: 0;
   bottom: 0;
   transform: translateX(-20%);
   color: white;
-}
+} */
 
 .results {
   background: linear-gradient(147.35deg, #82c21f -36.14%, #039274 34.99%);
