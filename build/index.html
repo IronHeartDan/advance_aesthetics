@@ -27,7 +27,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Small Header -->
-    <nav class="d-block d-lg-none navbar bg-light fixed-top">
+    <nav class="d-block d-lg-none navbar bg-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./assets/logo.png" alt="logo" />
@@ -113,12 +113,12 @@
       <nav class="d-flex align-items-center justify-content-between">
         <img src="./assets/logo.png" alt="logo" />
         <div class="menu">
-          <a href="#" onmouseenter="hideMegaMenu()">Home</a>
-          <a href="#" onmouseenter="showMegaMenu(1)">Hair Care</a>
+          <a href="#" onmouseenter="hideMegaMenu()" class="current_nav">Home</a>
+          <a href="./hairCare.html" onmouseenter="showMegaMenu(1)">Hair Care</a>
           <a href="#" onmouseenter="showMegaMenu(2)">Skin Care</a>
           <a href="#" onmouseenter="showMegaMenu(3)">Slimming</a>
           <a href="#" onmouseenter="hideMegaMenu()">Laser</a>
-          <a href="#" onmouseenter="hideMegaMenu()">Results</a>
+          <a href="./results.html" onmouseenter="hideMegaMenu()">Results</a>
           <a href="#" onmouseenter="hideMegaMenu()">Let's Talk</a>
         </div>
       </nav>
@@ -1193,7 +1193,7 @@
     </section>
 
     <section class="book" style="background-color: #82c21f">
-      <div class="container py-5">
+      <div class="container p-5">
         <div class="row gy-5">
           <div
             class="col-12 col-lg d-flex align-items-center justify-content-center"

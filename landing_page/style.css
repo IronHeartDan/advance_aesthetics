@@ -51,9 +51,18 @@
   font-size: 1rem;
 }
 
+.swiper-slide {
+  height: auto;
+}
+
+.card > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 header {
-  position: sticky;
-  top: 0;
   background-color: #162d4d;
   /* box-shadow: 0 0 2px black; */
   z-index: 1000;
@@ -80,7 +89,7 @@ header {
 
 .home_title {
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -128,7 +137,7 @@ header {
 
 .offer_list {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   list-style: square;
 }
 
@@ -153,4 +162,14 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.footer_links {
+  text-decoration: none;
+  color: black;
+}
+
+.footer_links:hover {
+  color: #162d4d;
+  font-weight: bold;
 }

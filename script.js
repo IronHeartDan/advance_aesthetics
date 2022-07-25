@@ -1,6 +1,18 @@
 window.onload = () => {
   var btn_chat = document.getElementById("btn_chat");
+  var prevScrollpos = window.pageYOffset;
+  var bigHeader = document.getElementById("bigHeader");
+  var smallHeader = document.getElementById("smallHeader");
   window.onscroll = (e) => {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      bigHeader.style.opacity = "1";
+      smallHeader.style.opacity = "1";
+    } else {
+      bigHeader.style.opacity = "0";
+      smallHeader.style.opacity = "0";
+    }
+    prevScrollpos = currentScrollPos;
     if (document.body.scrollHeight === window.scrollY + window.innerHeight) {
       btn_chat.style.transform = "scale(0)";
     } else {
@@ -44,4 +56,11 @@ function hideMegaMenu() {
   var megaMenuCon = document.getElementById("mega_menu_con");
   megaMenuCon.style.transform = "translateY(-100%)";
   megaMenuCon.style.opacity = "0";
+}
+
+function showDialog() {
+  const myModal = new bootstrap.Modal(
+    document.getElementById("staticBackdrop")
+  );
+  myModal.show();
 }
