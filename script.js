@@ -64,3 +64,7 @@ function showDialog() {
   );
   myModal.show();
 }
+
+function showResults(type) {
+  console.log(type);
+}

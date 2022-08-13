@@ -11,6 +11,7 @@
 
   <title>Advance-Aesthetics-Results</title>
   <script src="./script.js"></script>
+  <script src="./results.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         </div>
         <div class="modal-body p-5">
           <h5 class="modal-title text-center" id="staticBackdropLabel" style="color: tomato">
-            Calculate Your Cost And Grafts.
+            Feel free to contact us
           </h5>
           <form method="post" action="./contact.php">
             <div class="form_input_con">
@@ -57,7 +58,7 @@
   </div>
   <!-- Modal -->
   <!-- Small Header -->
-  <nav class="d-block d-lg-none navbar bg-light fixed-top">
+  <nav class="d-block d-lg-none navbar bg-light sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./assets/logo.png" alt="logo" />
@@ -289,51 +290,354 @@
   </header>
   <!-- Header -->
 
-  <section class="mt-5">
+  <section class="mt-3 mt-md-5">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1 class="section_title">Results we can achieve together.</h1>
-        </div>
-        <div class="col"></div>
-        <div class="col">
-          <p>
-            We’ve created a full-stack structure for our working workflow
-            processes, <strong>Few words in bold</strong> were from the funny
-            the century initial all the made, have spare to negatives.
-          </p>
-        </div>
+      <div class="d-block d-lg-flex align-items-center justify-content-between">
+        <h1 class="section_title">Results we can <br> achieve together.</h1>
+        <p class="mt-3 mt-lg-0">
+          We’ve created a full-stack structure for our working <br class="d-none d-md-block"> workflow
+          processes, <strong>Few words in bold</strong> were from <br class="d-none d-md-block"> the funny
+          the century initial all the made, have spare <br class="d-none d-md-block"> to negatives.
+        </p>
       </div>
-      <div class="row mt-5">
-        <div class="col-8">
-          <a href="#" class="results_types selected_type">All Results</a>
-          <a href="#" class="results_types">Hair transplat</a>
-          <a href="#" class="results_types">Advanced tricho sure</a>
-          <a href="#" class="results_types">Laser hair reduction</a>
-          <a href="#" class="results_types">Slimming</a>
+      <div class="mt-5 w-100 d-lg-flex align-items-baseline justify-content-between">
+        <div class="results_types_con d-flex w-100" style="overflow: auto;">
+          <a href="javascript:showFirstOfAll()" class="results_types selected_type d-block d-md-inline">All Results</a>
+          <a href="javascript:showHairs()" class="results_types d-block d-md-inline">Hair transplat</a>
+          <a href="javascript:showTricho()" class="results_types d-block d-md-inline">Advanced tricho sure</a>
+          <a href="javascript:showLaser()" class="results_types d-block d-md-inline">Laser hair reduction</a>
+          <a href="javascript:showSlimming()" class="results_types d-block d-md-inline">Slimming</a>
         </div>
-        <div class="col d-flex justify-content-end">
-          <a href="javascript:showDialog()" class="btn_primary">Book an oppointment</a>
+        <div class="d-none d-lg-block ms-2">
+          <a href="javascript:showDialog()" class="d-block btn_primary">Book an oppointment</a>
         </div>
       </div>
 
-      <div class="row mt-2 g-5">
-        <div class="col-6">
+      <!-- <div class="row mt-2 g-2 g-md-5">
+        <div class="col-md-6">
           <img src="./assets/asset_result_one.png" alt="One" class="w-100" />
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <img src="./assets/asset_result_two.png" alt="Two" class="w-100" />
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <img src="./assets/asset_result_three.png" alt="Three" class="w-100" />
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <img src="./assets/asset_result_four.png" alt="Four" class="w-100" />
         </div>
+      </div> -->
+
+
+      <div class="results_data_con mt-2">
+
+
+        <!-- Hair Transplant -->
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/hair/asset_results_hair_one_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Hair Transplant</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/hair/asset_results_hair_one_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Hair Transplant</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/hair/asset_results_hair_two_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Hair Transplant</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/hair/asset_results_hair_two_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Hair Transplant</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/hair/asset_results_hair_three_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Hair Transplant</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/hair/asset_results_hair_three_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Hair Transplant</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/hair/asset_results_hair_four_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Hair Transplant</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/hair/asset_results_hair_four_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Hair Transplant</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hair Transplant -->
+
+
+        <!-- Tricho  -->
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/tricho/asset_results_tricho_one_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Advance Tricho</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/tricho/asset_results_tricho_one_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Advance Tricho</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/tricho/asset_results_tricho_two_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Advance Tricho</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/tricho/asset_results_tricho_two_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Advance Tricho</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/tricho/asset_results_tricho_three_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Advance Tricho</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/tricho/asset_results_tricho_three_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Advance Tricho</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/tricho/asset_results_tricho_four_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Advance Tricho</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/tricho/asset_results_tricho_four_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Advance Tricho</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tricho  -->
+
+
+        <!-- Laser  -->
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/laser/asset_results_laser_one_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Laser Hair Reduction</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/laser/asset_results_laser_one_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Laser Hair Reduction</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/laser/asset_results_laser_two_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Laser Hair Reduction</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/laser/asset_results_laser_two_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Laser Hair Reduction</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/laser/asset_results_laser_three_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Laser Hair Reduction</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/laser/asset_results_laser_three_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Laser Hair Reduction</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/laser/asset_results_laser_four_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Laser Hair Reduction</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/laser/asset_results_laser_fourr_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Laser Hair Reduction</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laser  -->
+
+
+        <!-- Slimming  -->
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/slimming/asset_results_slimming_one_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Slimming</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/slimming/asset_results_slimming_one_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Slimming</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/slimming/asset_results_slimming_two_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Slimming</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/slimming/asset_results_slimming_two_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Slimming</h6>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/slimming/asset_results_slimming_three_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Slimming</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/slimming/asset_results_slimming_three_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Slimming</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="result_data">
+          <div class="result_image result_image_before w-50 h-100 d-flex">
+            <img src="./assets/results/slimming/asset_results_slimming_four_before.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>Before</h4>
+              <h6>Slimming</h6>
+            </div>
+          </div>
+          <div class="result_image result_image_after w-50 h-100 d-flex">
+            <img src="./assets/results/slimming/asset_results_slimming_four_after.png" alt="result" class="w-100" />
+            <div class="result_data_detail">
+              <h4>After</h4>
+              <h6>Slimming</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slimming Transplant -->
+
+
       </div>
 
+
       <div class="mt-2 d-flex justify-content-end">
-        <a href="#" class="btn_trns d-flex align-items-center justify-content-center">View All
+        <a href="javascript:showAll()" id="result_viewAll"
+          class="btn_trns align-items-center justify-content-center">View All
           <img src="./assets/icon_right_arrow.png" alt="Right Arrow" class="ms-2" /></a>
       </div>
     </div>
@@ -343,13 +647,12 @@
     <div class="row w-100 g-0">
       <div class="col-12 col-lg-6 order-3 order-lg-0 p-0">
         <div style="overflow: hidden; width: 100%; height: 500px">
-          <div id="display-googlemap" style="height: 100%; width: 100%; max-width: 100%">
+          <!-- <div id="googlemaps-display" style="height: 100%; width: 100%; max-width: 100%">
             <iframe style="height: 100%; width: 100%; border: 0" frameborder="0"
-              src="https://www.google.com/maps/embed/v1/place?q=India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-          </div>
-          <a class="codefor-googlemap" href="https://www.embed-map.com" id="grab-mapdata">https://www.embed-map.com</a>
+              src="https://www.google.com/maps/embed/v1/place?q=Advanced+Aesthetics,+1001,+First+floor,+Bhoomi+Allium,+Kokane+Chowk,+next+to+Ranka+Jewellers,+Pimple+Saudagar,+Pune,+Maharashtra+411027&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+          </div> -->
           <style>
-            #display-googlemap img {
+            #googlemaps-display img {
               max-width: none !important;
               background: none !important;
               font-size: inherit;
