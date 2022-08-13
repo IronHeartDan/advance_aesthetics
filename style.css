@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar-brand > img {
+  width: 100px;
+}
+
 .accordion-button::after {
   background-image: url("./assets/icon_plus.png") !important;
 }
