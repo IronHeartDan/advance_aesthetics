@@ -59,7 +59,7 @@
   </div>
   <!-- Modal -->
   <!-- Small Header -->
-  <nav class="d-block d-lg-none navbar bg-light sticky-top" id="smallHeader">
+  <nav class="d-block d-xl-none navbar bg-light sticky-top" id="smallHeader">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./assets/logo.png" alt="logo" />
@@ -229,7 +229,7 @@
   <!-- Small Header -->
 
   <!-- Header -->
-  <header class="d-none d-lg-block" id="bigHeader">
+  <header class="d-none d-xl-block" id="bigHeader">
     <!-- Big -->
     <nav>
       <div class="container d-flex align-items-center justify-content-between">
@@ -417,9 +417,9 @@
 
   <section class="home position-relative">
     <!-- Big Image -->
-    <div class="d-none d-lg-block w-75 vh-100">
+    <div class="home_big d-none d-xl-block" style="width: 60%;">
       <!-- <img src="./assets/asset_home.png" alt="Adv" class="w-100 h-100" style="object-fit: cover" /> -->
-      <div id="carouselExampleSlidesOnly" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+      <div id="homeCarousel" class="carousel slide w-100 h-100" data-bs-ride="carousel">
         <div class="carousel-inner w-100 h-100">
           <div class="carousel-item active w-100 h-100">
             <img src="./assets/asset_home.png" alt="Adv" class="w-100 h-100" style="object-fit: cover" />
@@ -437,9 +437,9 @@
 
     <!-- Medieum Image -->
 
-    <div class="d-none d-md-block d-lg-none w-100 vh-100">
+    <div class="d-none d-md-block d-xl-none w-100 vh-100">
       <!-- <img src="./assets/asset_home_medium.png" alt="Adv" class="w-100 h-100" style="object-fit: cover" /> -->
-      <div id="carouselExampleSlidesOnly" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+      <div id="homeCarousel" class="carousel slide w-100 h-100" data-bs-ride="carousel">
         <div class="carousel-inner w-100 h-100">
           <div class="carousel-item active w-100 h-100">
             <img src="./assets/asset_home_medium.png" alt="Adv" class="w-100 h-100" style="object-fit: cover" />
@@ -460,7 +460,7 @@
 
     <div class="d-md-none w-100 vh-100">
       <!-- <img src="./assets/asset_home_small.png" alt="Adv" class="w-100 h-100" style="object-fit: cover" /> -->
-      <div id="carouselExampleSlidesOnly" class="carousel slide w-100 h-100" data-bs-ride="carousel">
+      <div id="homeCarousel" class="carousel slide w-100 h-100" data-bs-ride="carousel">
         <div class="carousel-inner w-100 h-100">
           <div class="carousel-item active w-100 h-100">
             <img src="./assets/asset_home_small.png" alt="Adv" class="w-100 h-100" style="object-fit: cover" />
@@ -476,72 +476,64 @@
     </div>
     <!-- Small Image -->
 
-    <div class="d-none d-lg-block home_con home_content_con_lg"></div>
-    <div class="d-none d-md-block d-lg-none home_con home_content_con_md"></div>
+    <div class="d-none d-xl-block home_con home_content_con_lg"></div>
+    <div class="d-none d-md-block d-xl-none home_con home_content_con_md"></div>
     <div class="d-md-none home_con home_content_con_sm"></div>
 
-    <div class="d-none d-lg-flex home_content_lg">
-      <h1 style="font-size: 80px">
-        <strong>
-          Goodbye <br />
-          to Acne & <br />
-          Discomfort
-        </strong>
-      </h1>
-      <br />
-      <p>
+    <div class="d-none d-xl-flex home_content_lg">
+      <div class="btn_media">
+        <img src="./assets/icon_play.png" alt="Media" />
+      </div>
+      <span style="margin-top: 20px;font-style: normal;font-size: 72px;font-weight: 800;line-height: 107.5%;">
+        Goodbye <br />
+        to Acne & <br />
+        Discomfort
+      </span>
+      <span style="margin-top:20px;font-weight: 500;font-size: 24px;line-height: 33px;">
         Bid goodbye to acne, scars and <br />
-        discomfort and get clean & clear skin.
-      </p>
-      <br />
-      <a href="javascript:showDialog()" class="btn_primary mt-5">Get Started</a>
-      <br />
+        discomfort and get clean & clear <br> skin.
+      </span>
+      <a href="javascript:showDialog()" class="btn_primary" style="margin-top:20px;border-radius: 4px;">Get Started</a>
     </div>
 
-    <div class="d-none d-md-block d-lg-none home_content_md">
-      <h1 style="font-size: 60px">
-        <strong>
-          Goodbye <br />
-          to Acne & <br />
-          Discomfort
-        </strong>
+    <div class="d-none d-md-block d-xl-none home_content_md">
+      <h1 style="font-style: normal;font-weight: 800;font-size: 72px;line-height: 107.5%;">
+        Goodbye <br />
+        to Acne & <br />
+        Discomfort
       </h1>
-      <br />
-      <p>
+      <span style="margin-top: 20px;font-style: normal;font-weight: 500;font-size: 24px;line-height: 33px;">
         Bid goodbye to acne, scars and <br />
         discomfort and get clean & clear skin.
-      </p>
+      </span>
       <br />
-      <a href="javascript:showDialog()" class="btn_primary mt-5">Get Started</a>
+      <a href="javascript:showDialog()" class="btn_primary" style="margin-top:20px;border-radius: 4px;">Get Started</a>
       <br />
     </div>
 
     <div class="d-md-none home_content_sm">
-      <h1 style="font-size: 40px">
-        <strong>
-          Goodbye <br />
-          to Acne & <br />
-          Discomfort
-        </strong>
+      <h1 style="font-style: normal;font-weight: 800;font-size: 36px;line-height: 107.5%;">
+        Goodbye <br />
+        to Acne & <br />
+        Discomfort
       </h1>
-      <br />
-      <p>
+      <span style="font-style: normal;font-weight: 500;font-size: 16px;line-height: 22px;">
         Bid goodbye to acne, scars and discomfort and get clean & clear skin.
-      </p>
-      <br />
-      <a href="javascript:showDialog()" class="btn_primary">Get Started</a>
+      </span>
+
+      <a href="javascript:showDialog()" class="btn_primary" style="margin-top:20px;border-radius: 4px;">Get Started</a>
       <br />
     </div>
   </section>
 
   <section class="services" style="background-color: #162d4d; color: white">
-    <div class="container p-5">
+    <div class="container p-4 p-md-5">
       <div class="row">
         <div class="col-12 col-xl d-flex flex-column">
-          <h4 style="color: orange; text-transform: uppercase">
+          <h4 style="color: orange; text-transform: uppercase" class="small_title">
             Our services
           </h4>
-          <h1 class="section_title" style="color: white">
+          <h1 class="section_title" style="color: white;margin-top: 15px;">
             We provide promising <br />
             results in treating <br />
             problems like hairloss, <br />
@@ -549,14 +541,17 @@
           </h1>
         </div>
         <div class="col-12 col-xl d-flex flex-column">
-          <p>
+          <span class="mt-5 mt-md-0"
+            style="font-style: normal;font-weight: 400;font-size: 18px;line-height: 25px;letter-spacing: 0.03em;">
             Advance aesthetics is an established brand which caters with all
             skin related problems and deals with-
-          </p>
+          </span>
           <div class="mt-2 row gy-5">
             <div class="col-12 col-md-6 col-lg-6">
               <img src="./assets/asset_service_one.png" alt="Hair" />
-              <h4 class="mt-2">Hair Treatments</h4>
+              <span
+                style="display: block;margin-top: 11px;font-style: normal;font-weight: 700;font-size: 24px;line-height: 33px;">Hair
+                Treatments</span>
               <p class="mt-2">
                 Suffering with hairfall problem? Tired of damaged hair?
                 Advance aesthetics here to save the day!
@@ -564,7 +559,9 @@
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <img src="./assets/asset_service_two.png" alt="" />
-              <h4 class="mt-2">Skin Treatments</h4>
+              <span
+                style="display: block;margin-top: 11px;font-style: normal;font-weight: 700;font-size: 24px;line-height: 33px;">Skin
+                Treatments</span>
               <p class="mt-2">
                 Boost up your confidence to a whole new level by trying out
                 our best skin treatments for skin, acne and pigmentation.
@@ -572,7 +569,9 @@
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <img src="./assets/asset_service_three.png" alt="" />
-              <h4 class="mt-2">Laser Treatments</h4>
+              <span
+                style="display: block;margin-top: 11px;font-style: normal;font-weight: 700;font-size: 24px;line-height: 33px;">Laser
+                Treatments</span>
               <p class="mt-2">
                 Our clients describe us as a sample text for content, Line one
                 here and line two will be here.
@@ -580,7 +579,9 @@
             </div>
             <div class="col-12 col-md-6 col-lg-6">
               <img src="./assets/asset_service_four.png" alt="" />
-              <h4 class="mt-2">Slimming Treatments</h4>
+              <span
+                style="display: block;margin-top: 11px;font-style: normal;font-weight: 700;font-size: 24px;line-height: 33px;">Slimming
+                Treatments</span>
               <p class="mt-2">
                 In today’s world where body shaming has becomesuch a major
                 issue and being comfortable with your own body is essential
@@ -600,7 +601,7 @@
           <img src="./assets/asset_result.jpg" alt="Results" class="w-100 h-100" style="object-fit: cover" />
         </div>
         <div class="col-12 col-md-6 p-3 p-md-5 d-flex flex-column align-items-start justify-content-center">
-          <p>RESULTS</p>
+          <h4 class="small_title">RESULTS</h4>
           <h1 class="mt-2 section_title" style="color: white">
             Here are some of our <br class="d-none d-md-block"> happy and satisfied <br class="d-none d-md-block">
             clients and their results
@@ -616,14 +617,14 @@
     <div class="container mt-5">
       <div class="row g-0">
         <div class="col-12 col-lg-8">
-          <h4 style="color: orange">CAPABILITIEES</h4>
-          <h1 class="section_title">
+          <h4 style="color: orange" class="small_title">CAPABILITIEES</h4>
+          <h1 class="section_title" style="color: #162D4D;">
             We offer services that will <br class="d-none d-md-block" />
             help you achieve your goals.
           </h1>
         </div>
         <div class="col-12 col-lg p-2 p-md-5 ps-0">
-          <p>
+          <p style="font-style: normal;font-weight: 400;font-size: 16px;line-height: 26px;">
             Our treatments are clinically proven to be the finest and safest.
             We strive to change and normalise today’s modernbeauty scenarioand
             make treatments available at reasonable and affordable prices.
@@ -636,7 +637,7 @@
         <div class="col-12 col-lg-6 col-xl-7">
           <img src="./assets/asset_cap_thumbnail.png" alt="Capabilities" class="w-100" />
         </div>
-        <div class="d-none d-lg-block col ps-5 d-flex align-items-start justify-content-start">
+        <div class="d-none d-lg-block col d-flex align-items-start justify-content-start" style="padding-left: 100px;">
           <img src="./assets/asset_cap.png" alt="Capabilities" />
         </div>
       </div>
@@ -682,7 +683,7 @@
       </div>
       <div class="row mt-5">
         <div class="col-12 col-md-6">
-          <h1 class="section_title">
+          <h1 class="section_title" style="color: #162D4D;">
             Trending services of the <br class="d-none d-lg-block" />
             month.
           </h1>
@@ -806,24 +807,22 @@
 
   </section>
 
-  <section class="d-none d-md-block theme_video my-5 vh-100">
-    <!-- <video poster="./assets/video_thumbnail.png" class="w-100 h-100"></video> -->
+  <!-- <section class="d-none d-md-block theme_video my-5 vh-100">
     <iframe class="w-100 h-100" src="https://www.youtube.com/embed/ytVlZxTLHAU" title="YouTube video player"
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
   </section>
 
   <section class="d-md-none theme_video my-5">
-    <!-- <video poster="./assets/video_thumbnail.png" class="w-100 h-100"></video> -->
     <iframe class="w-100" style="min-height: 400px;" src="https://www.youtube.com/embed/ytVlZxTLHAU"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
-  </section>
+  </section> -->
 
   <section class="testimonials my-5">
     <div class="container">
-      <h4 style="color: tomato">TESTIMONIALS</h4>
+      <h4 style="color: tomato" class="small_title">TESTIMONIALS</h4>
       <h1 class="section_title">Verified Google Reviews</h1>
 
       <!-- Big -->
@@ -835,7 +834,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_one.jpg" alt="Shruti Naphade" style="border-radius: 50%" />
-                    <h6 class="ms-2">Shruti Naphade</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Shruti Naphade</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -865,7 +865,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_two.jpg" alt="Sandeep Bondre" style="border-radius: 50%" />
-                    <h6 class="ms-2">Sandeep Bondre</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Sandeep Bondre</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -891,7 +892,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_three.jpg" alt="Payal Matani" style="border-radius: 50%" />
-                    <h6 class="ms-2">Payal Matani</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Payal Matani</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -920,7 +922,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_four.jpg" alt="Salonie Jain" style="border-radius: 50%" />
-                    <h6 class="ms-2">Salonie Jain</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Salonie Jain</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -949,7 +952,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_five.jpg" alt="Nikhil Bhosale" style="border-radius: 50%" />
-                    <h6 class="ms-2">Nikhil Bhosale</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Nikhil Bhosale</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -976,7 +980,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_six.jpg" alt="Ruchika Chavan" style="border-radius: 50%" />
-                    <h6 class="ms-2">Ruchika Chavan</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Ruchika Chavan</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -1011,7 +1016,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_one.jpg" alt="Shruti Naphade" style="border-radius: 50%" />
-                    <h6 class="ms-2">Shruti Naphade</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Shruti Naphade</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -1041,7 +1047,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_two.jpg" alt="Sandeep Bondre" style="border-radius: 50%" />
-                    <h6 class="ms-2">Sandeep Bondre</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Sandeep Bondre</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -1067,7 +1074,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_three.jpg" alt="Payal Matani" style="border-radius: 50%" />
-                    <h6 class="ms-2">Payal Matani</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Payal Matani</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -1096,7 +1104,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_four.jpg" alt="Salonie Jain" style="border-radius: 50%" />
-                    <h6 class="ms-2">Salonie Jain</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Salonie Jain</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -1125,7 +1134,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_five.jpg" alt="Nikhil Bhosale" style="border-radius: 50%" />
-                    <h6 class="ms-2">Nikhil Bhosale</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Nikhil Bhosale</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -1152,7 +1162,8 @@
                 <div class="row ps-3 py-2">
                   <div class="col d-flex align-items-center p-2">
                     <img src="./assets/asset_testimonial_six.jpg" alt="Ruchika Chavan" style="border-radius: 50%" />
-                    <h6 class="ms-2">Ruchika Chavan</h6>
+                    <h6 class="ms-2" style="font-style: normal;font-weight: 600;font-size: 18px;line-height: 18px;">
+                      Ruchika Chavan</h6>
                   </div>
                 </div>
                 <div class="row ps-3 py-2">
@@ -1244,18 +1255,24 @@
       </div>
       <div class="col-12 col-lg-3 p-5">
         <img src="./assets/icon_phone.svg" alt="phone" />
-        <h4 class="mt-3">Get in touch</h4>
+        <h4 class="mt-3" style="font-style: normal;font-weight: 700;font-size: 20px;line-height: 28px;">Get in touch
+        </h4>
         <span class="mt-2">General inquiries</span>
-        <a class="mt-2" href="tel:+917066511155" style="color: black; text-decoration: none">+91 7066511155
+        <br>
+        <a class="mt-2" href="tel:+917066511155"
+          style="color: black; text-decoration: none;font-style: normal;font-weight: 700;font-size: 20px;line-height: 28px;">+91
+          7066511155
         </a>
-        <h5 class="mt-2">Working hours</h5>
+        <h5 style="margin-top: 20px;font-style: normal;font-weight: 700;font-size: 20px;line-height: 28px;">Working
+          hours
+        </h5>
         <span class="mt-2">Monday - Sunday</span>
         <span class="mt-2">10.00 am to 8.00 pm IST</span>
       </div>
       <div class="col-12 col-lg-3 p-5">
         <img src="./assets/icon_mail.svg" alt="Mail" />
-        <h4 class="mt-3">Address</h4>
-        <p>
+        <h4 class="mt-3" style="font-style: normal;font-weight: 700;font-size: 20px;line-height: 28px;">Address</h4>
+        <p style="margin-top: 20px;">
           Bhoomi Allium, Shop No. 1001, First Floor, Next to ranka jewellers,
           Kokane chowk, Pimple saudagar, Pune - 411027
         </p>
@@ -1267,7 +1284,7 @@
     <div class="container p-5">
       <div class="row gy-5">
         <div class="col-12 col-lg d-flex align-items-center justify-content-center">
-          <h4 style="font-size: 2.75rem; font-weight: 900; color: #162d4d">
+          <h4 style="font-style: normal;font-weight: 600;font-size: 32px;line-height: 44px;color: #162d4d">
             Hurry Up! And Get Hair Transplant Consultation By Experienced
             team.
           </h4>
@@ -1284,7 +1301,7 @@
     <div class="container">
       <div class="row py-5 gy-5">
         <div class="col-12 col-lg text-center text-lg-start">
-          <img src="./assets/footer_logo.png" alt="logo" style="width: 100px;" />
+          <img src="./assets/footer_logo.png" alt="logo" style="width: 130px;" />
         </div>
         <div class="d-none d-md-flex  flex-column col">
           <span class="footer_title">Hair Services</span>
@@ -1380,7 +1397,7 @@
         </div>
       </div>
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-between m-0 mt-md-5 py-2"
-        style="color: white">
+        style="color: white;font-style: normal;font-weight: 400;font-size: 15px;line-height: 24px;opacity: 0.8;">
         <span class="text-center">
           © 2022, Advanced Aesthetics.
         </span class="text-center">

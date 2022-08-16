@@ -1,10 +1,15 @@
 @font-face {
-  font-family: Custom;
+  font-family: OpenSans;
   src: url("./assets/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url("./assets/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
 * {
-  font-family: Custom;
+  font-family: OpenSans;
 }
 
 html {
@@ -63,17 +68,23 @@ html {
   box-shadow: none !important;
 }
 
+.small_title {
+  font-family: Montserrat !important;
+}
+
 .section_title {
   color: black;
   font-size: 40px;
   font-weight: 800;
   line-height: 54.47px;
+  font-style: normal;
 }
 @media screen and (max-width: 400px) {
   .section_title {
-    font-size: x-large;
-    font-weight: bold;
-    line-height: unset;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 49px;
   }
 }
 
@@ -129,18 +140,20 @@ html {
 }
 
 .btn_media {
+  cursor: pointer;
   background-color: #162d4d;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  width: 62px;
+  height: 62px;
   border-radius: 50%;
-  box-shadow: 0 0 10px 10px black;
-  transition: all ease 0.25s;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25);
+  transition: all ease 0.5s;
 }
 
 .btn_media:hover {
-  transform: scale(1.25);
+  transform: scale(1.1) rotate(360deg);
 }
 
 .results_types_con::-webkit-scrollbar {
@@ -220,19 +233,20 @@ header,
 
 nav {
   padding: 1rem;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .menu > a {
   text-decoration: none;
   padding: 1rem 1.5rem;
   color: #162d4d;
+  font-size: 18px;
 }
 
 .menu > a:hover,
 .current_nav {
   color: black;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .menu > a:last-of-type {
@@ -276,8 +290,6 @@ nav {
 }
 
 @media screen and (max-width: 400px) {
-  .dropdown-menu {
-  }
   .mega_menu_link h4,
   .mega_menu_link span {
     font-size: medium !important;
@@ -309,6 +321,10 @@ section {
   mix-blend-mode: multiply;
 } */
 
+.home .home_big {
+  height: 90vh;
+}
+
 .home .home_con {
   position: absolute;
   height: 100%;
@@ -319,8 +335,8 @@ section {
 }
 
 .home .home_content_con_lg {
-  bottom: 0%;
-  right: 0%;
+  top: 0;
+  right: 10%;
 }
 
 .home .home_content_con_md {
@@ -337,14 +353,11 @@ section {
 .home_content_lg {
   flex-direction: column;
   align-items: start;
-  justify-content: space-around;
   /* background-color: black; */
-  height: 60%;
-  aspect-ratio: 1;
   position: absolute;
-  right: 10%;
-  top: 15%;
-  padding: 40px 20px;
+  right: 25%;
+  top: 18%;
+  /* padding: 40px 20px; */
   color: white;
 }
 
@@ -403,6 +416,10 @@ footer {
   text-decoration: none;
   color: white;
   max-width: fit-content;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .footer_links:hover {
@@ -411,6 +428,10 @@ footer {
 
 .footer_title {
   color: silver;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .footer_icons > div > img {
