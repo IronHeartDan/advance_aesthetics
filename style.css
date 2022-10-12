@@ -53,6 +53,37 @@ html {
   height: auto;
 }
 
+.swiper-button-prev {
+  left: 5%;
+}
+
+.swiper-button-next {
+  right: 5%;
+}
+
+@media screen and (max-width: 1500px) {
+  .swiper-button-prev {
+    left: 0%;
+  }
+
+  .swiper-button-next {
+    right: 0%;
+  }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-pagination-bullet {
+  margin: 0 10px !important;
+}
+.swiper-pagination-bullet-active {
+  outline: 1px solid #162d4d;
+  outline-offset: 10px;
+  background-color: #162d4d;
+}
+
 .card > .container {
   display: flex;
   flex-direction: column;
@@ -229,11 +260,11 @@ header,
   background-color: white;
   z-index: 1000;
   transition: all ease-in-out 0.25s;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 nav {
   padding: 1rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .menu > a {
@@ -269,7 +300,8 @@ nav {
   opacity: 0;
   transform: translateY(-100%);
   /* transition: opacity ease 0.5s; */
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 15px -10px rgba(0, 0, 0, 0.15);
 }
 
 .mega_menu_con ul > li::marker {
@@ -386,7 +418,6 @@ section {
 } */
 
 .results {
-  background: linear-gradient(147.35deg, #82c21f -36.14%, #039274 34.99%);
   color: white;
 }
 
@@ -420,6 +451,7 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+  margin-top: 10px;
 }
 
 .footer_links:hover {
@@ -432,6 +464,7 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 14px;
 }
 
 .footer_icons > div > img {
@@ -447,6 +480,7 @@ footer {
   display: flex;
   border: 1px solid white;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .footer_input > input {
